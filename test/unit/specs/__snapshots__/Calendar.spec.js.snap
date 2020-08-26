@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar.vue has the expected html structure 1`] = `
+<div
+  class="sc-calendar"
+>
+  <div>
+    <div
+      class="row"
+    >
+      <div
+        class="col-md-2 sc-events"
+      >
+        <h4>
+          External Events
+        </h4>
+         
+        <div
+          class="fc-event"
+          data-color="#fa7252"
+          data-id="7"
+          style="background-color: rgb(250, 114, 82); border-color: #fa7252;"
+        >
+          
+          External Event 1
+        
+        </div>
+         
+        <div
+          class="divider"
+        />
+         
+        <button
+          class="btn btn-red right-angular btn-block margin-bottom-15"
+          style="display: none;"
+          type="button"
+        >
+          ADD EVENT 
+          
+          <i
+            aria-hidden="true"
+            class="fa fa-plus"
+          />
+        </button>
+         
+        <div
+          class="new-event"
+          style="display: none;"
+        >
+          <h4>
+            Add New Event
+          </h4>
+           
+          <form
+            action="#"
+          >
+            <!---->
+             
+            <div
+              class="form-group"
+            >
+              <input
+                class="form-control"
+                placeholder="Enter Event Name"
+              />
+               
+              <!---->
+            </div>
+             
+            <div
+              class="form-group"
+            >
+              <!---->
+               
+              <!---->
+            </div>
+             
+            <button
+              class="btn btn-teal right-angular btn-block push-event-button btn-block margin-bottom-15"
+              type="button"
+            >
+              ADD EVENT
+            </button>
+          </form>
+        </div>
+      </div>
+       
+      <div
+        class="col-md-10"
+      >
+        <div />
+      </div>
+    </div>
+  </div>
+   
+  <!---->
+</div>
+`;

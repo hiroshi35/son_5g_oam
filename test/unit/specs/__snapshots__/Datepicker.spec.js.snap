@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Datepicker.vue has the expected html structure 1`] = `
+<div>
+  <input
+    class="form-control"
+    placeholder="Enter Date"
+    type="text"
+  />
+</div>
+`;
+
+exports[`Datepicker.vue renders .input-group-addon 1`] = `true`;

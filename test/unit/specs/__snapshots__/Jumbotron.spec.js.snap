@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jumbotron.vue has the expected html structure 1`] = `
+<div
+  class="jumbotron "
+  style="background-image: url(/static/imgs/carousel/1.jpg); color: rgb(255, 255, 255); background-repeat: no-repeat; background-size: cover;"
+>
+  <div
+    class="container"
+  >
+    <h1>
+      Hello World
+    </h1>
+     
+    <p />
+     
+    <p />
+  </div>
+</div>
+`;

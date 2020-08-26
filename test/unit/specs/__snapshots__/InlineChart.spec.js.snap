@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InlineChart.vue has the expected html structure 1`] = `
+<span
+  class="inline-chart"
+>
+  <span
+    style="display: none;"
+  >
+    4.2/5
+  </span>
+</span>
+`;

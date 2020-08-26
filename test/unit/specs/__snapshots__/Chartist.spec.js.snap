@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chartist.vue has the expected html structure 1`] = `
+<div
+  class="ct-chart"
+  style="width: 100%; height: inherit;"
+/>
+`;

@@ -1,0 +1,43 @@
+//Forms
+
+form {
+  .form-control {
+    border-radius: 0;
+    &:focus {
+      box-shadow: none;
+      border: 2px solid $primary-color;
+    }
+  }
+  .input-group-addon{
+    border-radius: 0;
+    background-color: #eeeeee;
+    color: inherit;
+  }
+
+  .has-success{
+    .form-control {
+      &:focus {
+        box-shadow: none !important;
+        border-color: #2b542c;
+      }
+    }
+  }
+  .has-error{
+    .form-control {
+      &:focus {
+        box-shadow: none !important;
+        border-color: #a94442;
+      }
+    }
+  }
+
+  .has-warning{
+    .form-control {
+      &:focus {
+        box-shadow: none !important;
+        border-color: #8a6d3b;
+
+      }
+    }
+  }
+}

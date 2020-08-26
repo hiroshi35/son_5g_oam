@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Widget.vue has the expected html structure 1`] = `
+<div
+  class="widget widget-red"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="col-md-4 col-sm-4  col-xs-4"
+    >
+      <div
+        class="icon"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-envelope-o"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="col-md-8 col-sm-8 col-xs-8"
+    >
+      <div
+        class="body"
+      >
+        <div
+          class="title"
+        >
+          <h4>
+            Test
+          </h4>
+        </div>
+         
+        <div
+          class="text"
+        >
+          22
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,201 @@
+//Side Panel
+.side-panel{
+  color: $text-darker;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left:0;
+  width: 350px;
+  background-color: #fff;
+  z-index: 3000;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  .side-panel-header{
+    height: 200px;
+    .name-position{
+      margin-top: 55px;
+    }
+    .avatar{
+      width: 80%;
+      height: 80%;
+      margin-top: 45px;
+      margin-left: 10%;
+    }
+    h2, h4{
+      margin-top: 0;
+      padding-top: 5px;
+      color: #fff;
+      font-family: Lato, sans-serif;
+      font-weight: 100;
+      text-align: left;
+    }
+    h3{
+      color: #fff;
+      text-align: center;
+      font-family: Lato, sans-serif;
+      font-weight: 100;
+    }
+  }
+  .nav-tabs{
+    a{
+      font-size:24px;
+    }
+  }
+  .tab-header{
+    padding: 10px 15px;
+    text-align: center;
+    a{
+      transition:150ms ease all;
+      color:rgba(#fff,0.8);
+      text-decoration: none;
+      &:hover{
+        color:#fff;
+      }
+    }
+  }
+  .task-list{
+    padding: 10px 0;
+    .task{
+      cursor: pointer;
+
+      list-style: none;
+      transition: 200ms ease all;
+
+      .task-body{
+        padding-top: 10px;
+      }
+      .task-label{
+        padding-top: 20px;
+        text-align: center;
+        p{
+          margin-top: 5px;
+        }
+      }
+
+    }
+  }
+  .close-side-panel{
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 38px;
+    transition: 200ms ease all;
+  }
+  .avatar{
+    border: 2px solid #fff;
+  }
+  .user-menu{
+    li{
+      list-style: none;
+      margin-bottom: 8px;
+      transition: 300ms ease background;
+      padding: 5px 10px;
+      border-radius: 5px;
+      &:hover{
+        background: rgba($text-color, .2);
+      }
+      a{
+        font-family: Lato, sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: $primary-text-color;
+        transition: 300ms ease margin;
+        &:hover{
+          color: darken($primary-text-color, 5%);
+          margin-left: 5px;
+        }
+        span{
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+.task-list{
+  padding: 0 0 !important;
+  .task{
+    cursor: pointer;
+
+    list-style: none;
+    transition: 200ms ease all;
+
+    .task-body{
+      padding-top: 10px;
+    }
+    .task-label{
+      padding-top: 20px;
+      text-align: center;
+      p{
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.default-theme{
+  .side-panel{
+    .side-panel-header{
+      background: linear-gradient(#0faf96, $primary-green);
+    }
+  }
+}
+
+.orange-theme{
+  .side-panel{
+    .side-panel-header{
+      background: linear-gradient(#FAA422, $orange);
+    }
+  }
+}
+
+.blue-theme{
+  .side-panel{
+    .side-panel-header{
+      background: linear-gradient(#16BFDA, $blue);
+    }
+  }
+}
+
+.purple-theme{
+  .side-panel{
+    .side-panel-header{
+      background: linear-gradient(#AA40D6, $purple);
+    }
+  }
+}
+
+.purple-theme{
+  .side-panel{
+    .side-panel-header{
+      background: linear-gradient(#AA40D6, $purple);
+    }
+  }
+}
+
+.red-theme{
+  .side-panel{
+    .side-panel-header{
+      background: linear-gradient(#DC4E20, $red);
+    }
+  }
+}
+
+.teal-theme{
+  .side-panel{
+    .side-panel-header{
+      background: linear-gradient(#1BB3B2, $teal);
+    }
+  }
+}
+
+.brown-theme{
+  .side-panel{
+    .side-panel-header{
+      background: linear-gradient(#A24E24, $brown);
+    }
+  }
+}

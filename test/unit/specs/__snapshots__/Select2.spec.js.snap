@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VSelect2.vue has the expected html structure 1`] = `
+<select
+  class="select sc-select form-control"
+  style="width: 100%;"
+>
+  <!---->
+   
+  <option
+    value="laravel"
+  >
+    Laravel
+  </option>
+  <option
+    value="gulp"
+  >
+    Gulp
+  </option>
+  <option
+    value="sass"
+  >
+    Sass
+  </option>
+   
+</select>
+`;

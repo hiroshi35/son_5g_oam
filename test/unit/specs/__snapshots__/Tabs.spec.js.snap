@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs.vue has the expected html structure 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="tab-nav"
+    >
+      <div
+        class="nav-wrapper"
+      >
+        <ul
+          class="nav nav-tabs"
+          role="tablist"
+        >
+          <li
+            class=""
+            role="presentation"
+          >
+            <a
+              aria-controls="testTab"
+              data-toggle="tab"
+              href="#testTab"
+              role="tab"
+            >
+              Test tab
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+     
+    <div
+      class="tab-content"
+    />
+  </div>
+</div>
+`;

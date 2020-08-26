@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionItem.vue has the expected html structure 1`] = `
+<div
+  class="panel accordion"
+>
+  <div
+    class="panel-heading"
+    id="heading_accordion"
+    role="tab"
+  >
+    <h4
+      class="panel-title"
+    >
+      <a
+        aria-controls="accordion"
+        aria-expanded="true"
+        data-parent="#accordion_id"
+        data-toggle="collapse"
+        href="#accordion"
+        role="button"
+      >
+        Accordion
+      </a>
+    </h4>
+  </div>
+   
+  <div
+    aria-labelledby="heading_accordion"
+    class="panel-collapse collapse"
+    id="accordion"
+    role="tabpanel"
+  >
+    <div
+      class="panel-body"
+    />
+  </div>
+</div>
+`;

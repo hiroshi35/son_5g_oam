@@ -1,0 +1,432 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialPost.vue has the expected html structure 1`] = `
+<div
+  class="row"
+>
+  <div
+    class="col-md-10 post"
+  >
+    <panel
+      footer="true"
+      type="panel-white right-angular"
+    >
+      <div
+        slot="header"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-8 col-xs-8"
+          >
+            <div
+              class="media"
+            >
+              <div
+                class="media-left"
+              >
+                <a
+                  href="#"
+                >
+                  <img
+                    class="media-object img-circle"
+                    height="40px"
+                    src="/static/imgs/avatars/man-1.png"
+                    width="40px"
+                  />
+                </a>
+              </div>
+               
+              <div
+                class="media-body"
+              >
+                <strong>
+                  <a
+                    href="#"
+                  >
+                    John Smith 
+                  </a>
+                </strong>
+                 added a new photo 
+                <br />
+                 
+                <small>
+                  4 hours ago
+                </small>
+              </div>
+            </div>
+          </div>
+           
+          <div
+            class="col-md-4 col-xs-4 config"
+          >
+            <div
+              class="dropdown pull-right"
+            >
+              <button
+                aria-expanded="true"
+                aria-haspopup="true"
+                class="btn btn-config dropdown-toggle"
+                data-toggle="dropdown"
+                id="postconfig1"
+                type="button"
+              >
+                <i
+                  aria-hidden="true"
+                  class="fa fa-chevron-down"
+                />
+              </button>
+               
+              <ul
+                aria-labelledby="postconfig1"
+                class="dropdown-menu contextual-dropdown"
+              >
+                <li>
+                  <a
+                    href="#"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="fa fa-times"
+                    />
+                     Hide Post
+                  </a>
+                </li>
+                 
+                <li>
+                  <a
+                    href="#"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="fa fa-reply"
+                    />
+                     ReportPost
+                  </a>
+                </li>
+                 
+                <li>
+                  <a
+                    href="#"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="fa fa-user-times"
+                    />
+                    Unfollow
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="post-body"
+      />
+       
+      <div
+        class="post-comments"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="divider"
+          />
+           
+          <div
+            class="comment"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-12 col-sm-12 col-xs-12"
+              >
+                <div
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <img
+                        class="media-object img-circle"
+                        height="30px"
+                        src="/static/imgs/avatars/man-4.png"
+                        width="30px"
+                      />
+                    </a>
+                  </div>
+                   
+                  <div
+                    class="media-body"
+                  >
+                    <p
+                      class="media-heading"
+                    >
+                      <strong>
+                        <a
+                          href="#"
+                        >
+                          Frank Doe
+                        </a>
+                      </strong>
+                       
+                      <small
+                        class="pull-right"
+                      >
+                         3 hours ago 
+                        <i
+                          aria-hidden="true"
+                          class="fa fa-clock-o"
+                        />
+                      </small>
+                    </p>
+                     
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur
+ adipisicing elit. Corporis debitis dignissimos nisi obcaecati )
+                    </p>
+                     
+                    <div>
+                      <a
+                        href="#"
+                      >
+                         5 
+                        <i
+                          aria-hidden="true"
+                          class="fa fa-thumbs-o-up"
+                        />
+                      </a>
+                       |
+                      
+                      <a
+                        href="#"
+                      >
+                        Like
+                      </a>
+                       |
+                      
+                      <a
+                        href="#"
+                      >
+                        Reply
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <div
+              class="divider"
+            />
+          </div>
+          <div
+            class="comment"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-12 col-sm-12 col-xs-12"
+              >
+                <div
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <img
+                        class="media-object img-circle"
+                        height="30px"
+                        src="/static/imgs/avatars/man-7.png"
+                        width="30px"
+                      />
+                    </a>
+                  </div>
+                   
+                  <div
+                    class="media-body"
+                  >
+                    <p
+                      class="media-heading"
+                    >
+                      <strong>
+                        <a
+                          href="#"
+                        >
+                          Sam Doe
+                        </a>
+                      </strong>
+                       
+                      <small
+                        class="pull-right"
+                      >
+                         2 hours ago 
+                        <i
+                          aria-hidden="true"
+                          class="fa fa-clock-o"
+                        />
+                      </small>
+                    </p>
+                     
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur
+ adipisicing elit. Corporis debitis dignissimos nisi obcaecati )
+                    </p>
+                     
+                    <div>
+                      <a
+                        href="#"
+                      >
+                         5 
+                        <i
+                          aria-hidden="true"
+                          class="fa fa-thumbs-o-up"
+                        />
+                      </a>
+                       |
+                      
+                      <a
+                        href="#"
+                      >
+                        Like
+                      </a>
+                       |
+                      
+                      <a
+                        href="#"
+                      >
+                        Reply
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <!---->
+          </div>
+        </div>
+      </div>
+       
+      <div
+        slot="footer"
+      >
+        <div
+          class="row post-footer"
+        >
+          <div
+            class="col-md-4 col-sm-4 col-xs-4"
+          >
+            <button
+              class="btn btn-green rounded"
+            >
+              <i
+                aria-hidden="true"
+                class="fa fa-thumbs-o-up"
+              />
+               15 Likes
+            </button>
+          </div>
+           
+          <div
+            class="col-md-8 col-sm-8 col-xs-8"
+          >
+            <form>
+              <div
+                class="input-group"
+              >
+                <input
+                  class="form-control rounded-left"
+                  placeholder="Write a Comment!"
+                  type="text"
+                />
+                 
+                <div
+                  class="input-group-btn"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="btn btn-teal right-angular dropdown-toggle"
+                    data-toggle="dropdown"
+                    type="button"
+                  >
+                    <span
+                      class="caret"
+                    />
+                     
+                    <span
+                      class="sr-only"
+                    >
+                      Toggle Dropdown
+                    </span>
+                  </button>
+                   
+                  <ul
+                    class="dropdown-menu contextual-dropdown dropdown-menu-right"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="fa fa-camera"
+                        />
+                         Add Photo
+                      </a>
+                    </li>
+                     
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="fa fa-video-camera"
+                        />
+                         Add Video
+                      </a>
+                    </li>
+                     
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="fa fa-calendar-o"
+                        />
+                         Add Event
+                      </a>
+                    </li>
+                  </ul>
+                   
+                  <button
+                    class="btn btn-teal rounded-right"
+                    type="button"
+                  >
+                    POST
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </panel>
+  </div>
+</div>
+`;

@@ -1,0 +1,375 @@
+.panel {
+  border: none;
+  border-radius: 5px;
+  h1, h2, h3, h4, h5, h6 {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+  .btn-rounded {
+    .btn {
+      border-radius: 25px;
+
+    }
+  }
+
+  .panel-heading {
+
+    color: #fff;
+    border-bottom: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: relative;
+    h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+      font-family: Lato, sans-serif;
+      font-weight: 300;
+      small {
+        color: #fff;
+        font-weight: 300;
+      }
+
+    }
+
+    a {
+      color: rgba(#fff, 0.8);
+      &:hover, &focus {
+        color: #fff;
+        text-decoration: none;
+
+      }
+    }
+
+  }
+  .panel-footer {
+    position: relative;
+    border-top: none;
+    color: #fff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+      font-family: Lato, sans-serif;
+      font-weight: 300;
+
+    }
+    a {
+      color: rgba(#fff, 0.8);
+      &:hover, &focus {
+        color: #fff;
+        text-decoration: none;
+
+      }
+    }
+  }
+  .panel-body {
+    line-height: 1.7;
+    position: relative;
+    font-size: 14px;
+    .tab-nav {
+      padding: 20px;
+      .nav-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      .nav {
+
+        display: table;
+        width: 100%;
+        text-align: center;
+        border: none;
+
+        li {
+          display: table-cell;
+          float: none;
+
+          i {
+            padding-left: 2px;
+          }
+        }
+        a {
+          color: rgba(#fff, 0.8);
+          border: none;
+          transition: 200ms ease all;
+        }
+        a:hover, a:focus {
+          border: none;
+          color: #fff;
+          outline: none;
+          background-color: inherit;
+        }
+        .active {
+          &:after {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid #fff;
+            transform: translate(-50%, -100%);
+
+          }
+          a, a:hover, a:focus {
+            border: none;
+            background: none;
+            color: #fff;
+
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.panel-primary {
+
+  @include panel-color($blue);
+
+}
+
+.panel-green {
+
+  @include panel-color($green);
+
+}
+
+.panel-red {
+
+  @include panel-color($red);
+
+}
+
+.panel-yellow {
+
+  @include panel-color($yellow);
+
+}
+
+.panel-orange {
+  @include panel-color($orange);
+
+}
+
+.panel-teal {
+  @include panel-color($teal);
+
+}
+
+.panel-purple {
+  @include panel-color($purple);
+
+}
+
+.panel-stone {
+  @include panel-color($stone);
+
+}
+
+.panel-moss {
+  @include panel-color($moss);
+
+}
+
+.panel-mist {
+  @include panel-color($mist);
+
+}
+
+.panel-sky {
+  @include panel-color($sky);
+
+}
+
+.panel-pink {
+  @include panel-color($pink);
+
+}
+
+.panel-blue-sky {
+  @include panel-color($blue-sky);
+
+}
+
+.panel-strawberry {
+  @include panel-color($strawberry);
+
+}
+
+.panel-blueberry {
+  @include panel-color($blueberry);
+
+}
+
+.panel-gray {
+  @include panel-color($text-color);
+
+}
+
+.panel-brown {
+  @include panel-color($brown);
+
+}
+
+.panel-white {
+  .panel-heading {
+    background-color: #fff;
+    color: $text-darker;
+    border-bottom: 1px solid rgba($primary-text-color, 0.3);
+    h1, h2, h3, h4, h5, h6 {
+      color: $primary-text-color;
+      small {
+        color: $primary-text-color;
+      }
+    }
+    a {
+      color: $link-color;
+      padding-bottom: 2px;
+      transition: 200ms ease all;
+      &:hover {
+        text-decoration: none;
+        color: darken($link-color, 7%);
+      }
+    }
+
+  }
+  .panel-footer {
+    background-color: #fff;
+    border-top: 1px solid rgba($text-color, 0.3);
+    color: $text-color;
+    h1, h2, h3, h4, h5, h6 {
+      color: $text-color;
+      small {
+        color: $text-color;
+      }
+
+    }
+    a {
+      color: $link-color;
+      padding-bottom: 2px;
+      transition: 200ms ease all;
+      &:hover {
+        text-decoration: none;
+        color: darken($link-color, 7%);
+
+      }
+
+    }
+  }
+
+  .nav-wrapper {
+    border-bottom: 1px solid rgba($text-color, 0.3);
+
+    .active {
+      a {
+        color: darken($text-color, 10%) !important;
+      }
+
+    }
+    li {
+
+      a {
+        color: $text-color !important;
+        &:hover {
+          color: darken($text-color, 10%) !important;
+
+        }
+
+      }
+    }
+  }
+  .form-control:focus {
+    border: 1px solid rgba($text-color, 0.3);
+    box-shadow: none
+
+  }
+
+  .list-group-item.active {
+    z-index: 2;
+    color: $text-color;
+    background-color: #fff;
+    border-color: rgba($text-color, 0.3);
+    & .list-group-item-text {
+      color: #fff;
+
+    }
+  }
+  .pagination > li > a {
+    color: inherit;
+    &:focus {
+      outline: none !important;
+
+    }
+  }
+  .pagination > .active > a {
+    background-color: $text-color;
+    border-color: rgba($text-color, 0.3);
+    color: #fff;
+    &:focus {
+      outline: none !important;
+
+    }
+  }
+
+  .pager li > a {
+    transition: 300ms ease all;
+    border: 2px solid $text-color;
+    color: $text-color;
+    font-weight: 600;
+    background-color: transparent;
+    &:hover {
+      color: #fff;
+      background-color: $text-color;
+
+    }
+  }
+  .pager .disabled > a {
+    border: 2px solid #b5b5b5;
+    color: #b5b5b5;
+    font-weight: 600;
+    background-color: transparent;
+    &:hover {
+      border: 2px solid #b5b5b5;
+      color: #b5b5b5;
+      background-color: transparent;
+
+    }
+  }
+
+  .contextual-dropdown {
+    border-radius: 7px;
+    & > li > a {
+      color: $text-darker;
+      font-weight: 400;
+      padding: 8px 20px;
+      transition: 200ms ease all;
+      &:hover {
+        color: #fff;
+        background-color: $text-darker;
+
+      }
+
+    }
+  }
+}
+
+.right-angular {
+  .panel-heading {
+    border-radius: 0 !important;
+
+  }
+  .panel-footer {
+    border-radius: 0 !important;
+
+  }
+}

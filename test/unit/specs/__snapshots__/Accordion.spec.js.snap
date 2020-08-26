@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion.vue has the expected html structure 1`] = `
+<div>
+  <div
+    aria-multiselectable="true"
+    class="panel-group"
+    id="accordion_id"
+    role="tablist"
+  />
+</div>
+`;

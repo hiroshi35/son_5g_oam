@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact.vue has the expected html structure 1`] = `
+<div>
+  <div
+    class="panel panel-white"
+  >
+    <!---->
+     
+    <div
+      class="panel-body"
+    >
+      <div
+        class="contact"
+      >
+        <div
+          class="contact-avatar"
+        >
+          <img
+            class="img-circle center-block"
+            height="70px"
+            src="/static/imgs/avatars/man-3.png"
+            width="70px"
+          />
+        </div>
+         
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-12"
+          >
+            <h3>
+              Adam Simpson
+            </h3>
+             
+            <small
+              class="margin-bottom-10 dis-bl"
+            >
+              CEO
+            </small>
+             
+            <div
+              class="social-buttons"
+            >
+              <a
+                class="btn  btn-fb rounded"
+                href="#"
+              >
+                <i
+                  aria-hidden="true"
+                  class="fa fa-facebook"
+                />
+              </a>
+               
+              <a
+                class="btn  btn-gplus rounded"
+                href="#"
+              >
+                <i
+                  aria-hidden="true"
+                  class="fa fa-google"
+                />
+              </a>
+               
+              <a
+                class="btn  btn-twitter rounded"
+                href="#"
+              >
+                <i
+                  aria-hidden="true"
+                  class="fa fa-twitter"
+                />
+              </a>
+            </div>
+             
+            <div
+              aria-label="..."
+              class="btn-group btn-group-outlined-margin btn-group-xs"
+              role="group"
+            >
+              <button
+                class="btn btn-outlined-default rounded-left"
+                type="button"
+              >
+                <i
+                  aria-hidden="true"
+                  class="fa fa-envelope"
+                />
+                
+              Send A Message
+            
+              </button>
+               
+              <button
+                class="btn btn-outlined-default rounded-right"
+                type="button"
+              >
+                View Profile 
+                <i
+                  aria-hidden="true"
+                  class="fa fa-user"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <!---->
+  </div>
+</div>
+`;

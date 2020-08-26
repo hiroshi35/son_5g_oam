@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel.vue has the expected html structure 1`] = `
+<div
+  class="panel panel-teal"
+>
+  <div
+    class="panel-heading"
+  >
+    Header
+  </div>
+   
+  <div
+    class="panel-body"
+  >
+    Hello World
+  </div>
+   
+  <div
+    class="panel-footer"
+  >
+    Footer
+  </div>
+</div>
+`;

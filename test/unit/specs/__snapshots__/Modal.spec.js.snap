@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal.vue has the expected html structure 1`] = `
+<div
+  class="modal fade"
+  id="modal"
+  role="dialog"
+  tabindex="-1"
+>
+  <div
+    class="modal-dialog"
+  >
+    <div
+      class="modal-content"
+    >
+      <div
+        class="modal-header"
+      >
+        <button
+          class="close"
+          type="button"
+        >
+          <span>
+            ×
+          </span>
+        </button>
+         Title
+      </div>
+       
+      <div
+        class="modal-body"
+      >
+        Body
+      </div>
+       
+      <div
+        class="modal-footer"
+      >
+        Footer
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post.vue has the expected html structure 1`] = `
+<article>
+  <div
+    class="panel panel-white article"
+  >
+    <div
+      class="panel-body"
+    >
+      <div
+        class="article-thumbnail top"
+        style="background-image: url(/img.jpg); color: rgb(255, 255, 255); background-repeat: no-repeat; background-size: cover;"
+      />
+       
+      <h2>
+        Title
+      </h2>
+       
+      <div>
+        <small>
+          by 
+        </small>
+         
+        <a
+          href="#"
+        >
+          John Doe 
+        </a>
+         |
+        
+        <small>
+          <i
+            aria-hidden="true"
+            class="fa fa-clock-o"
+          />
+           2 hours ago
+        </small>
+      </div>
+       
+      <div
+        class="article-body"
+      >
+        Body
+      </div>
+    </div>
+     
+    <div
+      class="panel-footer"
+    >
+      <a
+        class="comments"
+        href="#"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-comments"
+        />
+         5
+      </a>
+       |
+      
+      <a
+        class="likes"
+        href="#"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-heart-o"
+        />
+         5
+      </a>
+      
+      |
+      
+      <a
+        class="share"
+        href="#"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-share-alt"
+        />
+      </a>
+       
+      <div
+        class="category pull-right"
+      >
+        <a
+          href="#"
+        >
+          WEB
+        </a>
+      </div>
+    </div>
+  </div>
+</article>
+`;
