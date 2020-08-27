@@ -37,9 +37,11 @@
         if (val) {
           $(this.$el).modal('show')
           document.addEventListener('click', this.clickOutside, false);
+          console.log('HI5');
         } else {
           $(this.$el).modal('hide')
-          document.removeEventListener('click', this.clickOutside, false)
+          document.removeEventListener('click', this.clickOutside, false);
+          console.log('HI4');
         }
       }
     },
@@ -47,15 +49,18 @@
       if (this.show) {
         $(this.$el).modal('show')
         document.addEventListener('click', this.clickOutside, false);
+        console.log('HI3');
       }
     },
     methods: {
       closeModal () {
         this.$emit('modalClosed');
+        console.log('HI1');
       },
       clickOutside (e) {
         if (!this.$refs.modal.contains(e.target)) {
           this.closeModal();
+          console.log('HI2');
         }
       }
     }

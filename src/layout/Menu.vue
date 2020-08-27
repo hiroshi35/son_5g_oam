@@ -15,6 +15,12 @@
             <router-link :to="{ name: 'dashboard' }" exact>
               <i class="fa fa-fw fa-dashboard"></i> Dashboard
             </router-link>
+            <router-link :to="{ name: 'fieldlist' }" exact>
+              <i class="fa fa-fw fa-list"></i> FieldList
+            </router-link>
+            <router-link :to="{ name: 'faultmessage' }" exact>
+              <i class="fa fa-fw fa-exclamation-triangle"></i> Fault Message
+            </router-link>
           </li>
           <li>
             <a href="javascript:;" class="collapsed" data-toggle="collapse" data-target="#social">

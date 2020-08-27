@@ -17,6 +17,8 @@ import Router from 'vue-router'
  * Import route components
  */
 import Dashboard from '@/pages/Dashboard.vue'
+import FieldList from '@/pages/FieldList.vue'
+import FaultMessage from '@/pages/FaultMessage.vue'
 import Animations from '@/pages/Animations.vue'
 import Blog from '@/pages/Blog.vue'
 import SinglePost from '@/pages/SinglePost.vue'
@@ -66,6 +68,16 @@ export default new Router({
       path: '/',
       name: 'dashboard',
       component: Dashboard
+    },
+    {
+      path: '/fieldlist',
+      name: 'fieldlist',
+      component: FieldList
+    },
+    {
+      path: '/faultmessage',
+      name: 'faultmessage',
+      component: FaultMessage
     },
     {
       path: '/animations',
