@@ -3,13 +3,13 @@
     <modal id="場域警告列表" :large="true" :show="isShowModal" @modalClosed="isShowModal = false">
       <h3 slot="title">場域警告列表</h3>
       <div class="form-list">
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label>場域名稱</label>
           <select class="form-control">
             <option>1</option>
             <option>2</option>
           </select>
-        </div>
+        </div> -->
         <div class="form-group">
           <label>基站編號</label>
           <select class="form-control">
@@ -35,13 +35,6 @@
         <div class="form-group">
           <i class="fa fa-search fa-2x" aria-hidden="true"></i>
         </div>
-      </div>
-      <div slot="footer">
-        <button type="button" class="btn btn-outlined-red right-angular"
-                @click="modal3 = false">CLOSE
-        </button>
-        <button type="button" class="btn btn-outlined-blue right-angular">SAVE
-        </button>
       </div>
       <div>
         <panel :header="false">
@@ -98,6 +91,13 @@
           </div>
         </panel>
       </div>
+      <div slot="footer">
+        <button type="button" class="btn btn-outlined-red right-angular"
+                @click="isShowModal = false">CLOSE
+        </button>
+        <!-- <button type="button" class="btn btn-outlined-blue right-angular">SAVE
+        </button> -->
+      </div>
     </modal>
     <!-- <page-header title="場域列表"></page-header> -->
     <panel type="panel-green">
@@ -121,7 +121,7 @@
               <td>{{item.name}}</td>
               <td>{{item.passLoss}}</td>
               <td>{{item.enbCount}}</td>
-              <td><i class="fa fa-heart fa-2x" style="color: #EA0000" v-if="item.fav"></i><i class="fa fa-heart-o fa-2x" v-if="!item.fav"></i></td>
+              <td><i class="fa fa-heart fa-2x" style="color: #EA0000" v-if="item.fav" @click="item.fav = false"></i><i class="fa fa-heart-o fa-2x" v-if="!item.fav" @click="item.fav = true"></i></td>
               <td><i class="fa fa-exclamation-triangle fa-2x" style="color: #0080FF" @click.prevent="isShowModal = true"></i></td>
               <td><i class="fa fa-trash fa-2x"></i></td>
             </tr>
@@ -143,7 +143,7 @@ export default {
   },
   data () {
     return {
-      isShowModal: true,
+      isShowModal: false,
       fields: [
         {
           id: 1,
@@ -215,7 +215,7 @@ export default {
   watch: {
     isShowModal: {
       immediate: true,
-      handler(newValue, oldValue) {
+      handler (newValue, oldValue) {
         // console.log("New: " + newValue);
         // console.log("Old: " + oldValue);
       }
@@ -225,6 +225,13 @@ export default {
 </script>
 
 <style lang="css">
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC");
+
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+}
+
 td,th{
   text-align:center;
 }

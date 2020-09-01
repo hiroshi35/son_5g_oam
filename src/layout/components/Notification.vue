@@ -28,16 +28,16 @@
       return {
         types: {
           success: {
-            title: 'Success',
-            className: 'label label-success'
+            title: '低',
+            className: 'label label-info'
           },
           danger: {
-            title: 'Danger',
+            title: '高',
             className: 'label label-danger'
           },
           info: {
-            title: 'Info',
-            className: 'label label-info'
+            title: '中',
+            className: 'label label-warning'
           },
           warning: {
             title: 'Warning',

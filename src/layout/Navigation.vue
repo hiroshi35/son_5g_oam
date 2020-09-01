@@ -100,7 +100,8 @@
               :key="notification.id"
             ></notification>
             <li class="notification-footer">
-              <a class="not-footer-a" href="#">View All</a>
+              <!-- <a class="not-footer-a" href="#">View All</a> -->
+              <router-link class="not-footer-a" :to="{ name: 'faultmessage' }" exact>View All</router-link>
             </li>
           </ul>
         </li>

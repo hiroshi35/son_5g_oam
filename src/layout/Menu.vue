@@ -12,9 +12,9 @@
         <h5 class="center-block">PAGES</h5>
         <ul class="nav navbar-nav ">
           <li>
-            <router-link :to="{ name: 'dashboard' }" exact>
+            <!-- <router-link :to="{ name: 'dashboard' }" exact>
               <i class="fa fa-fw fa-dashboard"></i> Dashboard
-            </router-link>
+            </router-link> -->
             <router-link :to="{ name: 'fieldlist' }" exact>
               <i class="fa fa-fw fa-list"></i> FieldList
             </router-link>

@@ -1,9 +1,9 @@
 <template>
-  <div class="modal fade" :id="id" tabindex="-1" role="dialog">
+  <div class="modal fade" :id="id" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog" :class="{'modal-lg': large,'modal-sm': small}">
       <div class="modal-content" ref="modal">
         <div class="modal-header">
-          <button type="button" class="close" @click="closeModal"><span>&times;</span></button>
+          <button type="button" class="close" @click.prevent="closeModal"><span>&times;</span></button>
           <slot name="title"></slot>
         </div>
         <div class="modal-body">
@@ -37,11 +37,11 @@
         if (val) {
           $(this.$el).modal('show')
           document.addEventListener('click', this.clickOutside, false);
-          console.log('HI5');
+          console.log('HI1');
         } else {
           $(this.$el).modal('hide')
           document.removeEventListener('click', this.clickOutside, false);
-          console.log('HI4');
+          console.log('HI2');
         }
       }
     },
@@ -55,13 +55,13 @@
     methods: {
       closeModal () {
         this.$emit('modalClosed');
-        console.log('HI1');
+        console.log('HI4');
       },
       clickOutside (e) {
-        if (!this.$refs.modal.contains(e.target)) {
-          this.closeModal();
-          console.log('HI2');
-        }
+        // if (!this.$refs.modal.contains(e.target)) {
+        //   this.closeModal();
+        //   console.log('HI5');
+        // }
       }
     }
   }

@@ -2,36 +2,33 @@
   <div class="container-fluid">
     <div class="form-list">
       <div class="form-group">
-        <label>場域名稱</label>
+        <label>場域名稱: </label>
         <select class="form-control">
-          <option>1</option>
-          <option>2</option>
+          <option v-for="(item, idx) in fields" :key="idx">{{item}}</option>
         </select>
       </div>
       <div class="form-group">
-        <label>基站編號</label>
+        <label>基站編號: </label>
         <select class="form-control">
-          <option>1</option>
-          <option>2</option>
+          <option v-for="(item, idx) in enbs" :key="idx">{{item}}</option>
         </select>
       </div>
       <div class="form-group">
-        <label>嚴重性</label>
+        <label>嚴重性: </label>
         <select class="form-control">
-          <option>1</option>
-          <option>2</option>
+          <option v-for="(item, idx) in degree" :key="idx">{{item}}</option>
         </select>
       </div>
       <div class="form-group">
-        <label>起屎日期</label>
-        <input type="date">
+        <label>起屎日期: </label>
+        <input type="date" v-model="startTime">
       </div>
       <div class="form-group">
-        <label>結束日期</label>
-        <input type="date">
+        <label>結束日期: </label>
+        <input type="date" v-model="endTime">
       </div>
       <div class="form-group">
-        <i class="fa fa-search" aria-hidden="true"></i>
+        <a href="#" @click="searchFM"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
       </div>
     </div>
     <div>
@@ -86,6 +83,20 @@
 export default {
   data () {
     return {
+      startTime: '',
+      endTime: '',
+      degree: ['高','中','低'],
+      enbs: [
+        '0050BA-FAP-000H11485361',
+        '0050BA-FAP-000H11485322',
+        '0050BA-FAP-000H11485333'
+      ],
+      fields: [
+        '700',
+        '710',
+        '711',
+        '712'
+      ],
       alarms: [
         {
           name: '未知場域1',
@@ -129,12 +140,23 @@ export default {
   methods: {
     clickRow (item) {
       this.tempAlarm = item;
+    },
+    searchFM () {
+      console.log(this.startTime);
+      console.log(this.endTime);
     }
   }
 }
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC");
+
+th, td, li, label {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+}
+
   .form-control {
     width:auto;
     display:inline-block;
