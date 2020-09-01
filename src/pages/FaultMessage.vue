@@ -2,29 +2,29 @@
   <div class="container-fluid">
     <div class="form-list">
       <div class="form-group">
-        <label>場域名稱: </label>
+        <label>Field Name: </label>
         <select class="form-control">
           <option v-for="(item, idx) in fields" :key="idx">{{item}}</option>
         </select>
       </div>
       <div class="form-group">
-        <label>基站編號: </label>
+        <label>eNB S/N: </label>
         <select class="form-control">
           <option v-for="(item, idx) in enbs" :key="idx">{{item}}</option>
         </select>
       </div>
       <div class="form-group">
-        <label>嚴重性: </label>
+        <label>Severity: </label>
         <select class="form-control">
           <option v-for="(item, idx) in degree" :key="idx">{{item}}</option>
         </select>
       </div>
       <div class="form-group">
-        <label>起屎日期: </label>
+        <label>StartTime: </label>
         <input type="date" v-model="startTime">
       </div>
       <div class="form-group">
-        <label>結束日期: </label>
+        <label>EndTime: </label>
         <input type="date" v-model="endTime">
       </div>
       <div class="form-group">
@@ -32,18 +32,18 @@
       </div>
     </div>
     <div>
-      <panel type="panel-red">
-        <h3 slot="header">告警清單</h3>
+      <panel type="panel-primary">
+        <h3 slot="header">Alarm List</h3>
         <div class="table-responsive">
           <table class="table table-hover">
             <thead>
               <tr class="active">
                 <th>No</th>
-                <th>場域名稱</th>
-                <th>基站編號</th>
-                <th>告警內容</th>
-                <th>嚴重性</th>
-                <th>日期</th>
+                <th>Field Name</th>
+                <th>eNB S/N</th>
+                <th>Content</th>
+                <th>Severity</th>
+                <th>Date</th>
               </tr>
             </thead>
             <tbody>
@@ -64,15 +64,15 @@
       <panel :header="false">
         <!-- <h3 slot="header">告警清單</h3> -->
         <ul class="ulGroup1">
-          <li class="liGroup1">場域名稱: {{tempAlarm.name}}</li>
-          <li class="liGroup1">基站編號: {{tempAlarm.enbSN}}</li>
-          <li class="liGroup1">事件分類:</li>
-          <li class="liGroup1">嚴重性: {{tempAlarm.degree}}</li>
-          <li class="liGroup1">發生時間: {{tempAlarm.data}}</li>
+          <li class="liGroup1">Field Name: {{tempAlarm.name}}</li>
+          <li class="liGroup1">eNB S/N: {{tempAlarm.enbSN}}</li>
+          <li class="liGroup1">Event Classification:</li>
+          <li class="liGroup1">Severity: {{tempAlarm.degree}}</li>
+          <li class="liGroup1">OccurTime: {{tempAlarm.data}}</li>
         </ul>
         <ul class="ulGroup2">
-          <li>事件原因</li>
-          <li>事件描述</li>
+          <li>Event Cause</li>
+          <li>Event Description</li>
         </ul>
       </panel>
     </div>
@@ -85,7 +85,7 @@ export default {
     return {
       startTime: '',
       endTime: '',
-      degree: ['高','中','低'],
+      degree: ['High','Medium','Low'],
       enbs: [
         '0050BA-FAP-000H11485361',
         '0050BA-FAP-000H11485322',

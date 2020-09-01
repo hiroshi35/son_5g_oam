@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid" style="padding-top: 10px;">
     <modal id="場域警告列表" :large="true" :show="isShowModal" @modalClosed="isShowModal = false">
-      <h3 slot="title">場域警告列表</h3>
+      <h3 slot="title">Field Alarm List</h3>
       <div class="form-list">
         <!-- <div class="form-group">
           <label>場域名稱</label>
@@ -11,25 +11,25 @@
           </select>
         </div> -->
         <div class="form-group">
-          <label>基站編號</label>
+          <label>eNB S/N</label>
           <select class="form-control">
             <option>1</option>
             <option>2</option>
           </select>
         </div>
         <div class="form-group">
-          <label>嚴重性</label>
+          <label>Severity</label>
           <select class="form-control">
             <option>1</option>
             <option>2</option>
           </select>
         </div>
         <div class="form-group">
-          <label>起屎日期</label>
+          <label>StartTime</label>
           <input type="date">
         </div>
         <div class="form-group">
-          <label>結束日期</label>
+          <label>EndTime</label>
           <input type="date">
         </div>
         <div class="form-group">
@@ -38,16 +38,16 @@
       </div>
       <div>
         <panel :header="false">
-          <h3 slot="header">告警清單</h3>
+          <h3 slot="header">Alarm List</h3>
           <div class="table-responsive">
             <table class="table table-hover">
               <thead>
                 <tr class="active">
                   <th>No</th>
-                  <th>基站編號</th>
-                  <th>告警內容</th>
-                  <th>嚴重性</th>
-                  <th>日期</th>
+                  <th>eNB S/N</th>
+                  <th>Content</th>
+                  <th>Severity</th>
+                  <th>Date</th>
                 </tr>
               </thead>
               <tbody>
@@ -66,18 +66,18 @@
       <div>
         <panel :header="false">
           <ul class="ulGroup2">
-            <li>事件原因:</li>
-            <li>事件分類:</li>
-            <li>事件描述:</li>
+            <li>Event Cause:</li>
+            <li>Event Classification:</li>
+            <li>Event Description:</li>
           </ul>
         </panel>
       </div>
       <div>
         <panel :header="false">
           <div style="display: flex; justify-content: space-around;">
-            <label style="font-size: 20px">低</label>
-            <label style="font-size: 20px">中</label>
-            <label style="font-size: 20px">高</label>
+            <label style="font-size: 20px">Low</label>
+            <label style="font-size: 20px">Medium</label>
+            <label style="font-size: 20px">High</label>
           </div>
           <div style="display: flex; justify-content: space-around;">
             <i class="fa fa-exclamation-triangle fa-5x" style="color: #0080FF;"></i>
@@ -100,19 +100,19 @@
       </div>
     </modal>
     <!-- <page-header title="場域列表"></page-header> -->
-    <panel type="panel-green">
-      <h3 slot="header">場域列表</h3>
+    <panel type="panel-primary">
+      <h3 slot="header">Field List</h3>
       <div class="table-responsive">
         <table class="table table-hover">
           <thead>
             <tr class="active">
-              <th>場域ID</th>
-              <th>場域名稱</th>
+              <th>Field ID</th>
+              <th>Field Name</th>
               <th>Path Loss Model</th>
-              <th>基地台數量</th>
-              <th>加入最愛</th>
-              <th>場域告警</th>
-              <th>刪除</th>
+              <th>eNB Count</th>
+              <th>Fav.</th>
+              <th>Alarm</th>
+              <th>Delete</th>
             </tr>
           </thead>
           <tbody>
@@ -227,10 +227,10 @@ export default {
 <style lang="css">
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC");
 
-* {
+/* * {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 300;
-}
+} */
 
 td,th{
   text-align:center;
